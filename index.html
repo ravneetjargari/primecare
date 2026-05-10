@@ -84,15 +84,15 @@ header.scrolled .hamburger span,header.solid .hamburger span{background:var(--na
 /* ══════════════════════════════════════════════════════════════════
    HOME PAGE – HERO (matches gogospeedy.ca/sample2 exactly)
 ══════════════════════════════════════════════════════════════════ */
-.hero{position:relative;min-height:100vh;display:flex;align-items:center;background-color:#0b1f3a;overflow:hidden}
+.hero{position:relative;height:100vh;max-height:100vh;display:flex;align-items:center;background-color:#0b1f3a;overflow:hidden}
 .hero-img-right{position:absolute;right:0;top:0;bottom:0;width:55%;display:flex;align-items:flex-end;justify-content:flex-end;z-index:0;pointer-events:none}
 .hero-img-right img{width:100%;height:100%;object-fit:cover;object-position:top center;display:block}
 .hero-img-right::before{content:'';position:absolute;inset:0;background:linear-gradient(to right,#0b1f3a 0%,#0b1f3a 5%,rgba(11,31,58,.6) 40%,transparent 75%);z-index:1}
-.hero-content{position:relative;z-index:2;max-width:560px;padding:140px 0 100px}
-.hero-title{font-family:'Playfair Display',serif;font-size:clamp(3.6rem,7vw,6.5rem);font-weight:700;line-height:1.0;color:var(--white);margin-bottom:28px;opacity:0;animation:fadeUp .8s .3s forwards}
-.hero-sub{font-size:1rem;color:rgba(255,255,255,.82);max-width:460px;line-height:1.8;margin-bottom:36px;opacity:0;animation:fadeUp .8s .55s forwards}
+.hero-content{position:relative;z-index:2;max-width:560px;padding:0}
+.hero-title{font-family:'Playfair Display',serif;font-size:clamp(2.8rem,5.5vw,5rem);font-weight:700;line-height:1.0;color:var(--white);margin-bottom:20px;opacity:0;animation:fadeUp .8s .3s forwards}
+.hero-sub{font-size:.95rem;color:rgba(255,255,255,.82);max-width:460px;line-height:1.75;margin-bottom:28px;opacity:0;animation:fadeUp .8s .55s forwards}
 .hero-actions{display:flex;gap:16px;flex-wrap:wrap;opacity:0;animation:fadeUp .8s .8s forwards}
-@media(max-width:768px){.hero-img-right{width:100%;opacity:.2}.hero-img-right::before{background:rgba(11,31,58,.85)}.hero-content{padding:130px 0 80px;max-width:100%}.hero-title{font-size:clamp(3rem,10vw,4.5rem)}}
+@media(max-width:768px){.hero-img-right{width:100%;opacity:.2}.hero-img-right::before{background:rgba(11,31,58,.85)}.hero-content{padding:0;max-width:100%}.hero-title{font-size:clamp(2.4rem,9vw,3.6rem)}}
 
 /* two-col */
 .two-col{display:grid;grid-template-columns:1fr 1fr;gap:2px}
@@ -543,13 +543,13 @@ footer{background:var(--navy);color:rgba(255,255,255,.75)}
       <div class="why-grid">
         <div class="why-card reveal">
           <div class="why-icon"><img src="https://gogospeedy.ca/sample2/wp-content/uploads/2026/04/medical.png" alt="Experienced"></div>
-          <h3>Experienced &amp; Verified Staff</h3>
+          <h3>Experienced and Verified Staff</h3>
           <p>We provide thoroughly screened professionals you can trust.</p>
           <a onclick="showPage('services')" class="btn-link">Learn More</a>
         </div>
         <div class="why-card reveal" style="transition-delay:.12s">
           <div class="why-icon"><img src="https://gogospeedy.ca/sample2/wp-content/uploads/2026/04/sla.png" alt="Fast"></div>
-          <h3>Fast &amp; Flexible Service</h3>
+          <h3>Fast and Flexible Service</h3>
           <p>Quick response times with staffing solutions tailored to your needs.</p>
           <a onclick="showPage('services')" class="btn-link">Learn More</a>
         </div>
@@ -580,7 +580,7 @@ footer{background:var(--navy);color:rgba(255,255,255,.75)}
           <h2 class="section-title">Committed to Excellence in Healthcare Staffing</h2>
           <p class="section-sub">We are a dedicated healthcare staffing provider focused on connecting skilled professionals with organizations that value quality care. Our mission is to bridge the gap between healthcare facilities and qualified staff by delivering reliable, efficient, and tailored staffing solutions.</p>
           <ul>
-            <li>Qualified &amp; Verified Professionals – Every staff member is carefully screened to ensure top-quality service.</li>
+            <li>Qualified & Verified Professionals – Every staff member is carefully screened to ensure top-quality service.</li>
             <li>Flexible Staffing Solutions – From short-term shifts to long-term placements, we adapt to your needs.</li>
           </ul>
           <a onclick="showPage('about')" class="btn btn-primary" style="margin-top:32px;">Learn More</a>
@@ -882,7 +882,7 @@ footer{background:var(--navy);color:rgba(255,255,255,.75)}
       <div class="sector-inner reverse">
         <div class="sector-text reveal">
           <span class="section-label">Travel & Remote</span>
-          <h2>Travel &amp; Remote Healthcare Staffing</h2>
+          <h2>Travel and Remote Healthcare Staffing</h2>
           <p>Through our travel and remote staffing solutions, PrimeCare Staffing Corp supports healthcare facilities in underserved and remote areas by providing qualified professionals where they are needed most. We help maintain continuity of care, strengthen workforce stability, and ensure patients receive quality healthcare services regardless of location.</p>
           <p>Our placements also offer healthcare professionals valuable experience in diverse clinical environments. Currently supporting placements across: <strong>Alberta, British Columbia, Nova Scotia, Manitoba, Ontario,</strong> and other regions based on client needs.</p>
           <a onclick="showPage('contact')" class="btn btn-primary">Contact the Team</a>
@@ -903,11 +903,11 @@ footer{background:var(--navy);color:rgba(255,255,255,.75)}
           <a onclick="showPage('contact')" class="btn btn-gold" style="margin-top:20px;">Contact our Home Support Team Today</a>
         </div>
         <div class="care-features reveal" style="transition-delay:.15s">
-          <div class="care-feat"><h4>Patient Support &amp; Engagement Services</h4><p>We believe quality care goes beyond medical support—it's about comfort, dignity, and connection. Our team provides dependable assistance to ensure patients feel supported at all times.</p></div>
-          <div class="care-feat"><h4>Facility Support &amp; Daily Assistance</h4><p>A well-maintained and organized environment plays a vital role in healthcare delivery. Our professionals assist with essential support tasks that help maintain clean, safe, and efficient care settings.</p></div>
+          <div class="care-feat"><h4>Patient Support and Engagement Services</h4><p>We believe quality care goes beyond medical support—it's about comfort, dignity, and connection. Our team provides dependable assistance to ensure patients feel supported at all times.</p></div>
+          <div class="care-feat"><h4>Facility Support and Daily Assistance</h4><p>A well-maintained and organized environment plays a vital role in healthcare delivery. Our professionals assist with essential support tasks that help maintain clean, safe, and efficient care settings.</p></div>
           <div class="care-feat"><h4>Personal Care Support</h4><p>Maintaining dignity and comfort is a priority in every aspect of care. Our trained professionals provide respectful and reliable assistance with personal care needs.</p></div>
           <div class="care-feat"><h4>Medication Support Assistance</h4><p>Managing medications consistently is essential for patient well-being. Our staff provide reliable reminders and support to help patients stay on track with their prescribed routines.</p></div>
-          <div class="care-feat"><h4>Post-Care &amp; Recovery Support</h4><p>Our professionals assist patients during post-treatment or recovery phases by providing dependable care, mobility assistance, and daily support to ensure a smooth transition.</p></div>
+          <div class="care-feat"><h4>Post-Care and Recovery Support</h4><p>Our professionals assist patients during post-treatment or recovery phases by providing dependable care, mobility assistance, and daily support to ensure a smooth transition.</p></div>
         </div>
       </div>
     </div>
@@ -955,7 +955,7 @@ footer{background:var(--navy);color:rgba(255,255,255,.75)}
           <h2 class="section-title">Committed to Excellence in Healthcare Staffing</h2>
           <p class="section-sub">PrimeCare Staffing Corp is a trusted healthcare staffing agency dedicated to providing highly qualified medical professionals to hospitals, government health boards, and clinics. We focus on delivering dependable, efficient, and high-quality staffing solutions that support better patient care and operational excellence.</p>
           <ul class="about-text" style="margin-top:28px;">
-            <li style="display:flex;align-items:flex-start;gap:12px;margin-bottom:16px;font-size:.96rem;color:var(--gray-700);"><span style="content:'✓';display:flex;align-items:center;justify-content:center;min-width:22px;height:22px;background:var(--teal);color:var(--white);border-radius:50%;font-size:.75rem;font-weight:700;margin-top:2px;flex-shrink:0;">✓</span>Qualified &amp; Verified Professionals – Every staff member is carefully screened to ensure top-quality service.</li>
+            <li style="display:flex;align-items:flex-start;gap:12px;margin-bottom:16px;font-size:.96rem;color:var(--gray-700);"><span style="content:'✓';display:flex;align-items:center;justify-content:center;min-width:22px;height:22px;background:var(--teal);color:var(--white);border-radius:50%;font-size:.75rem;font-weight:700;margin-top:2px;flex-shrink:0;">✓</span>Qualified and Verified Professionals – Every staff member is carefully screened to ensure top-quality service.</li>
             <li style="display:flex;align-items:flex-start;gap:12px;margin-bottom:16px;font-size:.96rem;color:var(--gray-700);"><span style="display:flex;align-items:center;justify-content:center;min-width:22px;height:22px;background:var(--teal);color:var(--white);border-radius:50%;font-size:.75rem;font-weight:700;margin-top:2px;flex-shrink:0;">✓</span>Flexible Staffing Solutions – From short-term shifts to long-term placements, we adapt to your needs.</li>
             <li style="display:flex;align-items:flex-start;gap:12px;font-size:.96rem;color:var(--gray-700);"><span style="display:flex;align-items:center;justify-content:center;min-width:22px;height:22px;background:var(--teal);color:var(--white);border-radius:50%;font-size:.75rem;font-weight:700;margin-top:2px;flex-shrink:0;">✓</span>Nationwide Reach – Supporting healthcare facilities across all Canadian provinces.</li>
           </ul>
@@ -990,19 +990,19 @@ footer{background:var(--navy);color:rgba(255,255,255,.75)}
       <div class="values-grid">
         <div class="value-card reveal">
           <div class="value-icon"><img src="https://gogospeedy.ca/sample2/wp-content/uploads/2026/04/staffing.png" alt="Integrity"></div>
-          <h3>Integrity &amp; Professionalism</h3>
+          <h3>Integrity and Professionalism</h3>
           <p>We uphold the highest standards of honesty, transparency, and accountability in every service we provide.</p>
           <a onclick="showPage('contact')" class="btn-link" style="margin-top:16px;">Learn More</a>
         </div>
         <div class="value-card reveal" style="transition-delay:.12s">
           <div class="value-icon"><img src="https://gogospeedy.ca/sample2/wp-content/uploads/2026/04/healthcare.png" alt="Compassion"></div>
-          <h3>Compassion &amp; Care</h3>
+          <h3>Compassion and Care</h3>
           <p>We believe in delivering services with empathy, respect, and a strong commitment to patient well-being.</p>
           <a onclick="showPage('contact')" class="btn-link" style="margin-top:16px;">Learn More</a>
         </div>
         <div class="value-card reveal" style="transition-delay:.24s">
           <div class="value-icon"><img src="https://gogospeedy.ca/sample2/wp-content/uploads/2026/04/sla.png" alt="Quality"></div>
-          <h3>Quality &amp; Excellence</h3>
+          <h3>Quality and Excellence</h3>
           <p>We continuously strive to provide top-tier healthcare professionals who meet the highest industry standards.</p>
           <a onclick="showPage('contact')" class="btn-link" style="margin-top:16px;">Learn More</a>
         </div>
@@ -1139,7 +1139,7 @@ footer{background:var(--navy);color:rgba(255,255,255,.75)}
           <!-- Blog on FAQ -->
           <div style="margin-top:64px;">
             <span class="section-label">Insights</span>
-            <h2 class="section-title">Blog &amp; Article</h2>
+            <h2 class="section-title">Blog and Article</h2>
             <p class="section-sub" style="margin-bottom:40px;">Get the latest insights and updates in healthcare staffing.</p>
             <div class="blog-grid">
               <div class="blog-card reveal"><div class="blog-img"><img src="https://gogospeedy.ca/sample2/wp-content/uploads/2026/04/image-4-1.jpg" alt="Blog 1"></div><div class="blog-body"><div class="blog-meta"><span class="blog-cat">Blog</span><span class="blog-author">Admin · Feb 2026</span></div><h3>How to Choose the Right Healthcare Staffing Agency</h3><a class="blog-read">Read More</a></div></div>
