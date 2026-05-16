@@ -181,7 +181,7 @@ header.scrolled .hamburger span,header.solid .hamburger span{background:var(--na
 .skill-bar{height:8px;background:rgba(255,255,255,.12);border-radius:50px;overflow:hidden}
 .skill-fill{height:100%;background:linear-gradient(90deg,var(--teal),var(--gold));border-radius:50px;width:0;transition:width 1.4s cubic-bezier(.4,0,.2,1)}
 .cta-img{border-radius:16px;overflow:hidden;box-shadow:var(--shadow-lg)}
-.cta-img img{width:100%;height:400px;object-fit:cover}
+.cta-img img{width:100%;height:400px;object-fit:cover;object-position:top center;}
 
 /* recruitment */
 .recruitment-section{background:var(--cream)}
@@ -301,7 +301,7 @@ header.scrolled .hamburger span,header.solid .hamburger span{background:var(--na
 .about-who{background:var(--white);padding:80px 0}
 .about-who-inner{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:center}
 .about-who-img{border-radius:16px;overflow:hidden;box-shadow:var(--shadow-lg)}
-.about-who-img img{width:100%;height:440px;object-fit:cover}
+.about-who-img img{width:100%;height:440px;object-fit:cover;object-position:top center;}
 .mv-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-top:56px}
 .mv-card{border-radius:16px;padding:40px 36px;box-shadow:var(--shadow);border:1px solid var(--gray-200);transition:var(--trans)}
 .mv-card:hover{transform:translateY(-6px);box-shadow:var(--shadow-lg);border-color:var(--teal)}
@@ -680,12 +680,12 @@ footer{background:var(--navy);color:rgba(255,255,255,.85)}
       <div class="cta-inner">
         <div class="cta-text reveal">
           <span class="section-label">Partner With Us</span>
-          <h2 class="section-title">Need Reliable Healthcare Staff Today?</h2>
+          <h2 class="section-title">Need Comfortable Healthcare Staff Today?</h2>
           <p>Partner with us for fast, dependable, and professional healthcare staffing solutions. Whether it's urgent coverage or long-term support, we're here to help you deliver exceptional care.</p>
           <div class="skills-wrap" style="margin-top:40px;" id="skillsWrap">
-            <div class="skill-item"><div class="skill-label"><span>Experienced</span><span id="pct1">0%</span></div><div class="skill-bar"><div class="skill-fill" data-target="92" id="fill1"></div></div></div>
-            <div class="skill-item"><div class="skill-label"><span>Affordable</span><span id="pct2">0%</span></div><div class="skill-bar"><div class="skill-fill" data-target="87" id="fill2"></div></div></div>
-            <div class="skill-item"><div class="skill-label"><span>Comfortable</span><span id="pct3">0%</span></div><div class="skill-bar"><div class="skill-fill" data-target="95" id="fill3"></div></div></div>
+            <div class="skill-item"><div class="skill-label"><span>Experienced</span><span id="pct1">0%</span></div><div class="skill-bar"><div class="skill-fill" data-target="100" id="fill1"></div></div></div>
+            <div class="skill-item"><div class="skill-label"><span>Affordable</span><span id="pct2">0%</span></div><div class="skill-bar"><div class="skill-fill" data-target="100" id="fill2"></div></div></div>
+            <div class="skill-item"><div class="skill-label"><span>Comfortable</span><span id="pct3">0%</span></div><div class="skill-bar"><div class="skill-fill" data-target="100" id="fill3"></div></div></div>
           </div>
         </div>
         <div class="cta-img reveal" style="transition-delay:.15s">
@@ -771,9 +771,32 @@ footer{background:var(--navy);color:rgba(255,255,255,.85)}
         <a onclick="showPage('faqs')" class="btn btn-outline">Learn More</a>
       </div>
       <div class="blog-grid">
-        <div class="blog-card reveal"><div class="blog-img"><img src="https://gogospeedy.ca/sample2/wp-content/uploads/2026/04/image-4-1.jpg" alt="Blog 1"></div><div class="blog-body"><div class="blog-meta"><span class="blog-cat">Blog</span><span class="blog-author">Admin</span></div><h3>How to Choose the Right Healthcare Staffing Agency</h3><a onclick="showPage('faqs')" class="blog-read">Read More</a></div></div>
-        <div class="blog-card reveal" style="transition-delay:.12s"><div class="blog-img"><img src="https://gogospeedy.ca/sample2/wp-content/uploads/2026/04/image-3-1.jpg" alt="Blog 2"></div><div class="blog-body"><div class="blog-meta"><span class="blog-cat">Blog</span><span class="blog-author">Admin</span></div><h3>The Future of Healthcare Staffing: Trends You Need to Know</h3><a onclick="showPage('faqs')" class="blog-read">Read More</a></div></div>
-        <div class="blog-card reveal" style="transition-delay:.24s"><div class="blog-img"><img src="https://gogospeedy.ca/sample2/wp-content/uploads/2026/04/assisting-senior-people-female-caregiver-holding-2022-05-31-02-21-32-utc.jpg" alt="Blog 3"></div><div class="blog-body"><div class="blog-meta"><span class="blog-cat">Blog</span><span class="blog-author">Admin</span></div><h3>The Importance of Reliable Healthcare Staffing in Modern Medical Facilities</h3><a onclick="showPage('faqs')" class="blog-read">Read More</a></div></div>
+        <div class="blog-card reveal" onclick="showPage('blog1')">
+
+  <div class="blog-img">
+    <img src="https://gogospeedy.ca/sample2/wp-content/uploads/2026/04/image-4-1.jpg" alt="Blog 1">
+  </div>
+
+  <div class="blog-body">
+
+    <div class="blog-meta">
+      <span class="blog-cat">Blog</span>
+      <span class="blog-author">Admin</span>
+    </div>
+
+    <h3>
+      How to Choose the Right Healthcare Staffing Agency
+    </h3>
+
+    <span class="blog-read">
+      Read More
+    </span>
+
+  </div>
+
+</div>
+        <div class="blog-card reveal" style="transition-delay:.12s"><div class="blog-img"><img src="https://gogospeedy.ca/sample2/wp-content/uploads/2026/04/image-3-1.jpg" alt="Blog 2"></div><div class="blog-body"><div class="blog-meta"><span class="blog-cat">Blog</span><span class="blog-author">Admin</span></div><h3>The Future of Healthcare Staffing: Trends You Need to Know</h3><a onclick="showPage('blog2')" class="blog-read">Read More</a></div></div>
+        <div class="blog-card reveal" style="transition-delay:.24s"><div class="blog-img"><img src="https://gogospeedy.ca/sample2/wp-content/uploads/2026/04/assisting-senior-people-female-caregiver-holding-2022-05-31-02-21-32-utc.jpg" alt="Blog 3"></div><div class="blog-body"><div class="blog-meta"><span class="blog-cat">Blog</span><span class="blog-author">Admin</span></div><h3>The Importance of Reliable Healthcare Staffing in Modern Medical Facilities</h3><a onclick="showPage('blog3')" class="blog-read">Read More</a></div></div>
       </div>
     </div>
   </section>
@@ -1055,9 +1078,9 @@ footer{background:var(--navy);color:rgba(255,255,255,.85)}
           <h2 class="section-title">We Provide High Quality Private Nursing</h2>
           <p>Partner with us for fast, dependable, and professional healthcare staffing solutions. Whether it's urgent coverage or long-term support, we're here to help you deliver exceptional care.</p>
           <div class="skills-wrap" style="margin-top:40px;">
-            <div class="skill-item"><div class="skill-label"><span>Experienced</span><span>92%</span></div><div class="skill-bar"><div class="skill-fill" style="width:92%"></div></div></div>
-            <div class="skill-item"><div class="skill-label"><span>Affordable</span><span>87%</span></div><div class="skill-bar"><div class="skill-fill" style="width:87%"></div></div></div>
-            <div class="skill-item"><div class="skill-label"><span>Comfortable</span><span>95%</span></div><div class="skill-bar"><div class="skill-fill" style="width:95%"></div></div></div>
+            <div class="skill-item"><div class="skill-label"><span>Experienced</span><span>94%</span></div><div class="skill-bar"><div class="skill-fill" style="width:100%"></div></div></div>
+            <div class="skill-item"><div class="skill-label"><span>Affordable</span><span>87%</span></div><div class="skill-bar"><div class="skill-fill" style="width:100%"></div></div></div>
+            <div class="skill-item"><div class="skill-label"><span>Comfortable</span><span>95%</span></div><div class="skill-bar"><div class="skill-fill" style="width:100%"></div></div></div>
           </div>
         </div>
         <div class="cta-img reveal" style="transition-delay:.15s">
@@ -1361,6 +1384,113 @@ footer{background:var(--navy);color:rgba(255,255,255,.85)}
   </section>
 
 </div><!-- /page-login -->
+
+<div id="page-blog1" class="page">
+
+  <section class="page-hero">
+    <div class="container">
+      <h1>How to Choose the Right Healthcare Staffing Agency</h1>
+      <p>Insights and guidance from PrimeCare Staffing Corp</p>
+
+      <div class="breadcrumb">
+        <a class="bc-home" onclick="showPage('home')">Home</a>
+        <span>/</span>
+        <span>Blog Article</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="about-who">
+    <div class="container" style="max-width:900px;">
+
+      <span class="section-label">Blog Article</span>
+
+      <h2 class="section-title">
+        How to Choose the Right Healthcare Staffing Agency
+      </h2>
+
+      <p class="section-sub" style="max-width:100%;margin-bottom:40px;">
+        Selecting the right healthcare staffing agency is a crucial decision for hospitals, clinics, and government health boards. The quality of staff provided directly affects patient care and organizational performance.
+      </p>
+
+      <h3 style="margin-bottom:16px;color:var(--navy);font-size:1.5rem;">
+        Key Factors to Consider
+      </h3>
+
+      <h4 style="margin-bottom:10px;color:var(--teal);font-size:1.15rem;">
+        1. Industry Experience
+      </h4>
+
+      <p style="margin-bottom:28px;line-height:1.9;color:var(--gray-700);">
+        Choose an agency with proven experience in healthcare staffing. An experienced agency understands the unique challenges of the medical field.
+      </p>
+
+      <h4 style="margin-bottom:10px;color:var(--teal);font-size:1.15rem;">
+        2. Screening Process
+      </h4>
+
+      <p style="margin-bottom:28px;line-height:1.9;color:var(--gray-700);">
+        A strong recruitment process ensures that only qualified and competent professionals are placed. Always ask about credential verification and background checks.
+      </p>
+
+      <h4 style="margin-bottom:10px;color:var(--teal);font-size:1.15rem;">
+        3. Flexibility and Availability
+      </h4>
+
+      <p style="margin-bottom:28px;line-height:1.9;color:var(--gray-700);">
+        Healthcare needs can arise at any time. A good agency should offer 24/7 support and flexible staffing options.
+      </p>
+
+      <h4 style="margin-bottom:10px;color:var(--teal);font-size:1.15rem;">
+        4. Reputation and Reliability
+      </h4>
+
+      <p style="margin-bottom:40px;line-height:1.9;color:var(--gray-700);">
+        Check client reviews, testimonials, and case studies to evaluate the agency’s credibility.
+      </p>
+
+      <h3 style="margin-bottom:16px;color:var(--navy);font-size:1.5rem;">
+        Why PrimeCare Staffing Corp Stands Out
+      </h3>
+
+      <p style="margin-bottom:20px;line-height:1.9;color:var(--gray-700);">
+        PrimeCare Staffing Corp is committed to excellence in healthcare staffing. We provide:
+      </p>
+
+      <ul style="margin-bottom:40px;padding-left:22px;line-height:2;color:var(--gray-700);">
+        <li>Thoroughly screened professionals</li>
+        <li>Fast response times</li>
+        <li>Customized staffing solutions</li>
+        <li>Continuous client support</li>
+      </ul>
+
+      <h3 style="margin-bottom:16px;color:var(--navy);font-size:1.5rem;">
+        Common Mistakes to Avoid
+      </h3>
+
+      <ul style="margin-bottom:40px;padding-left:22px;line-height:2;color:var(--gray-700);">
+        <li>Choosing based solely on cost</li>
+        <li>Ignoring credential verification processes</li>
+        <li>Not evaluating response time</li>
+        <li>Overlooking long-term partnership potential</li>
+      </ul>
+
+      <h3 style="margin-bottom:16px;color:var(--navy);font-size:1.5rem;">
+        Conclusion
+      </h3>
+
+      <p style="line-height:1.9;color:var(--gray-700);margin-bottom:40px;">
+        Choosing the right staffing agency can significantly improve your healthcare operations. With PrimeCare Staffing Corp, you gain a reliable partner dedicated to quality, efficiency, and patient care excellence.
+      </p>
+
+      <a onclick="showPage('home')" class="btn btn-primary">
+        Back to Home
+      </a>
+
+    </div>
+  </section>
+
+</div>
 
 <!-- ══════════════════════════════════════════════════════════════
      FOOTER (shared)
