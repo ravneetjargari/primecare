@@ -221,7 +221,7 @@ header.scrolled .hamburger span,header.solid .hamburger span{background:var(--na
 /* blog */
 .blog-section{background:var(--cream)}
 .blog-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
-.blog-card{background:var(--white);border-radius:16px;overflow:hidden;box-shadow:var(--shadow);border:1px solid var(--gray-200);transition:var(--trans)}
+.blog-card{background:var(--white);border-radius:16px;overflow:hidden;box-shadow:var(--shadow);border:1px solid var(--gray-200);transition:var(--trans);cursor:pointer}
 .blog-card:hover{transform:translateY(-6px);box-shadow:var(--shadow-lg)}
 .blog-img{aspect-ratio:16/10;overflow:hidden}
 .blog-img img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
@@ -795,8 +795,8 @@ footer{background:var(--navy);color:rgba(255,255,255,.85)}
   </div>
 
 </div>
-        <div class="blog-card reveal" style="transition-delay:.12s"><div class="blog-img"><img src="https://gogospeedy.ca/sample2/wp-content/uploads/2026/04/image-3-1.jpg" alt="Blog 2"></div><div class="blog-body"><div class="blog-meta"><span class="blog-cat">Blog</span><span class="blog-author">Admin</span></div><h3>The Future of Healthcare Staffing: Trends You Need to Know</h3><a onclick="showPage('blog2')" class="blog-read">Read More</a></div></div>
-        <div class="blog-card reveal" style="transition-delay:.24s"><div class="blog-img"><img src="https://gogospeedy.ca/sample2/wp-content/uploads/2026/04/assisting-senior-people-female-caregiver-holding-2022-05-31-02-21-32-utc.jpg" alt="Blog 3"></div><div class="blog-body"><div class="blog-meta"><span class="blog-cat">Blog</span><span class="blog-author">Admin</span></div><h3>The Importance of Reliable Healthcare Staffing in Modern Medical Facilities</h3><a onclick="showPage('blog3')" class="blog-read">Read More</a></div></div>
+        <div class="blog-card reveal" style="transition-delay:.12s" onclick="showPage('blog2')"><div class="blog-img"><img src="https://gogospeedy.ca/sample2/wp-content/uploads/2026/04/image-3-1.jpg" alt="Blog 2"></div><div class="blog-body"><div class="blog-meta"><span class="blog-cat">Blog</span><span class="blog-author">Admin</span></div><h3>The Future of Healthcare Staffing: Trends You Need to Know</h3><span class="blog-read">Read More</span></div></div>
+        <div class="blog-card reveal" style="transition-delay:.24s" onclick="showPage('blog3')"><div class="blog-img"><img src="https://gogospeedy.ca/sample2/wp-content/uploads/2026/04/assisting-senior-people-female-caregiver-holding-2022-05-31-02-21-32-utc.jpg" alt="Blog 3"></div><div class="blog-body"><div class="blog-meta"><span class="blog-cat">Blog</span><span class="blog-author">Admin</span></div><h3>The Importance of Reliable Healthcare Staffing in Modern Medical Facilities</h3><span class="blog-read">Read More</span></div></div>
       </div>
     </div>
   </section>
@@ -1169,9 +1169,9 @@ footer{background:var(--navy);color:rgba(255,255,255,.85)}
             <h2 class="section-title">Blog and Article</h2>
             <p class="section-sub" style="margin-bottom:40px;">Get the latest insights and updates in healthcare staffing.</p>
             <div class="blog-grid">
-              <div class="blog-card reveal"><div class="blog-img"><img src="https://gogospeedy.ca/sample2/wp-content/uploads/2026/04/image-4-1.jpg" alt="Blog 1"></div><div class="blog-body"><div class="blog-meta"><span class="blog-cat">Blog</span><span class="blog-author">Admin · Feb 2026</span></div><h3>How to Choose the Right Healthcare Staffing Agency</h3><a class="blog-read">Read More</a></div></div>
-              <div class="blog-card reveal" style="transition-delay:.12s"><div class="blog-img"><img src="https://gogospeedy.ca/sample2/wp-content/uploads/2026/04/image-3-1.jpg" alt="Blog 2"></div><div class="blog-body"><div class="blog-meta"><span class="blog-cat">Blog</span><span class="blog-author">Admin · Oct 2025</span></div><h3>The Future of Healthcare Staffing: Trends You Need to Know</h3><a class="blog-read">Read More</a></div></div>
-              <div class="blog-card reveal" style="transition-delay:.24s"><div class="blog-img"><img src="https://gogospeedy.ca/sample2/wp-content/uploads/2026/04/assisting-senior-people-female-caregiver-holding-2022-05-31-02-21-32-utc.jpg" alt="Blog 3"></div><div class="blog-body"><div class="blog-meta"><span class="blog-cat">Blog</span><span class="blog-author">Admin · Jun 2025</span></div><h3>The Importance of Reliable Healthcare Staffing in Modern Medical Facilities</h3><a class="blog-read">Read More</a></div></div>
+              <div class="blog-card reveal" onclick="showPage('blog1')"><div class="blog-img"><img src="https://gogospeedy.ca/sample2/wp-content/uploads/2026/04/image-4-1.jpg" alt="Blog 1"></div><div class="blog-body"><div class="blog-meta"><span class="blog-cat">Blog</span><span class="blog-author">Admin · Feb 2026</span></div><h3>How to Choose the Right Healthcare Staffing Agency</h3><span class="blog-read">Read More</span></div></div>
+              <div class="blog-card reveal" style="transition-delay:.12s" onclick="showPage('blog2')"><div class="blog-img"><img src="https://gogospeedy.ca/sample2/wp-content/uploads/2026/04/image-3-1.jpg" alt="Blog 2"></div><div class="blog-body"><div class="blog-meta"><span class="blog-cat">Blog</span><span class="blog-author">Admin · Oct 2025</span></div><h3>The Future of Healthcare Staffing: Trends You Need to Know</h3><span class="blog-read">Read More</span></div></div>
+              <div class="blog-card reveal" style="transition-delay:.24s" onclick="showPage('blog3')"><div class="blog-img"><img src="https://gogospeedy.ca/sample2/wp-content/uploads/2026/04/assisting-senior-people-female-caregiver-holding-2022-05-31-02-21-32-utc.jpg" alt="Blog 3"></div><div class="blog-body"><div class="blog-meta"><span class="blog-cat">Blog</span><span class="blog-author">Admin · Jun 2025</span></div><h3>The Importance of Reliable Healthcare Staffing in Modern Medical Facilities</h3><span class="blog-read">Read More</span></div></div>
             </div>
           </div>
         </div>
@@ -1491,6 +1491,211 @@ footer{background:var(--navy);color:rgba(255,255,255,.85)}
   </section>
 
 </div>
+
+<!-- ══════════════════════════════════════════════════════════════
+     BLOG 2 PAGE
+══════════════════════════════════════════════════════════════════ -->
+<div id="page-blog2" class="page">
+
+  <section class="page-hero">
+    <div class="container">
+      <h1>The Future of Healthcare Staffing: Trends You Need to Know</h1>
+      <p>Insights and guidance from PrimeCare Staffing Corp</p>
+      <div class="breadcrumb">
+        <a class="bc-home" onclick="showPage('home')">Home</a>
+        <span>/</span>
+        <span>Blog Article</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="about-who">
+    <div class="container" style="max-width:900px;">
+
+      <span class="section-label">Blog Article</span>
+
+      <h2 class="section-title">
+        The Future of Healthcare Staffing: Trends You Need to Know
+      </h2>
+
+      <p class="section-sub" style="max-width:100%;margin-bottom:40px;">
+        The healthcare staffing industry is evolving rapidly. Understanding the emerging trends shaping the workforce will help hospitals, clinics, and care facilities stay ahead and deliver the highest standard of patient care.
+      </p>
+
+      <div style="margin-bottom:32px;border-radius:16px;overflow:hidden;box-shadow:var(--shadow);">
+        <img src="https://gogospeedy.ca/sample2/wp-content/uploads/2026/04/image-3-1.jpg" alt="Future of Healthcare Staffing" style="width:100%;height:360px;object-fit:cover;">
+      </div>
+
+      <h3 style="margin-bottom:16px;color:var(--navy);font-size:1.5rem;">
+        Key Trends Reshaping Healthcare Staffing
+      </h3>
+
+      <h4 style="margin-bottom:10px;color:var(--teal);font-size:1.15rem;">
+        1. Rise of Telehealth and Remote Care
+      </h4>
+      <p style="margin-bottom:28px;line-height:1.9;color:var(--gray-700);">
+        Telehealth has dramatically changed how healthcare is delivered. Staffing agencies must now supply professionals who are not only clinically skilled but also comfortable with digital health platforms and remote patient monitoring systems.
+      </p>
+
+      <h4 style="margin-bottom:10px;color:var(--teal);font-size:1.15rem;">
+        2. Increasing Demand for Specialized Roles
+      </h4>
+      <p style="margin-bottom:28px;line-height:1.9;color:var(--gray-700);">
+        As medical treatments become more advanced, the demand for specialists in areas such as oncology, intensive care, and mental health continues to grow. Agencies that can source and vet these specialized professionals will be in high demand.
+      </p>
+
+      <h4 style="margin-bottom:10px;color:var(--teal);font-size:1.15rem;">
+        3. Flexible and Contract Staffing Models
+      </h4>
+      <p style="margin-bottom:28px;line-height:1.9;color:var(--gray-700);">
+        Healthcare facilities are increasingly favouring flexible staffing arrangements to manage fluctuating patient volumes. Contract, per-diem, and travel nursing roles are growing sectors that staffing agencies must be equipped to fill quickly.
+      </p>
+
+      <h4 style="margin-bottom:10px;color:var(--teal);font-size:1.15rem;">
+        4. Technology-Driven Recruitment
+      </h4>
+      <p style="margin-bottom:28px;line-height:1.9;color:var(--gray-700);">
+        Artificial intelligence and data analytics are transforming how candidates are sourced, screened, and matched to roles. Agencies leveraging modern technology can reduce time-to-fill while improving placement quality.
+      </p>
+
+      <h4 style="margin-bottom:10px;color:var(--teal);font-size:1.15rem;">
+        5. Focus on Staff Wellness and Retention
+      </h4>
+      <p style="margin-bottom:40px;line-height:1.9;color:var(--gray-700);">
+        Burnout remains a critical challenge in healthcare. Forward-thinking staffing agencies and facilities are investing in mental health support, competitive compensation, and work-life balance initiatives to retain top talent.
+      </p>
+
+      <h3 style="margin-bottom:16px;color:var(--navy);font-size:1.5rem;">
+        How PrimeCare Staffing Corp Is Prepared
+      </h3>
+      <p style="margin-bottom:20px;line-height:1.9;color:var(--gray-700);">
+        At PrimeCare Staffing Corp, we stay ahead of industry shifts so our clients don't have to. Our commitment includes:
+      </p>
+      <ul style="margin-bottom:40px;padding-left:22px;line-height:2;color:var(--gray-700);">
+        <li>A continuously updated database of specialized healthcare professionals</li>
+        <li>Rapid deployment capabilities for urgent and flexible staffing needs</li>
+        <li>Technology-assisted screening and credential verification</li>
+        <li>Dedicated account managers who understand your facility's unique requirements</li>
+      </ul>
+
+      <h3 style="margin-bottom:16px;color:var(--navy);font-size:1.5rem;">
+        Conclusion
+      </h3>
+      <p style="line-height:1.9;color:var(--gray-700);margin-bottom:40px;">
+        The future of healthcare staffing is dynamic and full of opportunity for those who adapt. By partnering with an agency that understands and embraces these trends, your facility can be confident it will always have the right professionals in place to deliver exceptional care.
+      </p>
+
+      <a onclick="showPage('home')" class="btn btn-primary">
+        Back to Home
+      </a>
+
+    </div>
+  </section>
+
+</div><!-- /page-blog2 -->
+
+<!-- ══════════════════════════════════════════════════════════════
+     BLOG 3 PAGE
+══════════════════════════════════════════════════════════════════ -->
+<div id="page-blog3" class="page">
+
+  <section class="page-hero">
+    <div class="container">
+      <h1>The Importance of Reliable Healthcare Staffing in Modern Medical Facilities</h1>
+      <p>Insights and guidance from PrimeCare Staffing Corp</p>
+      <div class="breadcrumb">
+        <a class="bc-home" onclick="showPage('home')">Home</a>
+        <span>/</span>
+        <span>Blog Article</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="about-who">
+    <div class="container" style="max-width:900px;">
+
+      <span class="section-label">Blog Article</span>
+
+      <h2 class="section-title">
+        The Importance of Reliable Healthcare Staffing in Modern Medical Facilities
+      </h2>
+
+      <p class="section-sub" style="max-width:100%;margin-bottom:40px;">
+        In today's fast-paced healthcare environment, having reliable and qualified staff is not just a convenience — it is a necessity. The ability to consistently provide skilled professionals directly impacts patient outcomes, staff morale, and the overall efficiency of medical operations.
+      </p>
+
+      <div style="margin-bottom:32px;border-radius:16px;overflow:hidden;box-shadow:var(--shadow);">
+        <img src="https://gogospeedy.ca/sample2/wp-content/uploads/2026/04/assisting-senior-people-female-caregiver-holding-2022-05-31-02-21-32-utc.jpg" alt="Healthcare Staffing Importance" style="width:100%;height:360px;object-fit:cover;">
+      </div>
+
+      <h3 style="margin-bottom:16px;color:var(--navy);font-size:1.5rem;">
+        Why Reliable Staffing Is a Foundation of Quality Care
+      </h3>
+
+      <h4 style="margin-bottom:10px;color:var(--teal);font-size:1.15rem;">
+        1. Patient Safety and Care Quality
+      </h4>
+      <p style="margin-bottom:28px;line-height:1.9;color:var(--gray-700);">
+        Understaffed facilities face greater risks of medical errors, longer response times, and reduced patient satisfaction. Having a dependable pool of qualified nurses and caregivers ensures that patients receive consistent, attentive, and safe care at all times.
+      </p>
+
+      <h4 style="margin-bottom:10px;color:var(--teal);font-size:1.15rem;">
+        2. Reducing the Burden on Existing Staff
+      </h4>
+      <p style="margin-bottom:28px;line-height:1.9;color:var(--gray-700);">
+        When a medical facility is short-staffed, the pressure falls on existing employees. This leads to fatigue, burnout, and a higher rate of staff turnover. Reliable staffing solutions allow permanent employees to work sustainably and maintain their performance standards.
+      </p>
+
+      <h4 style="margin-bottom:10px;color:var(--teal);font-size:1.15rem;">
+        3. Meeting Regulatory and Compliance Requirements
+      </h4>
+      <p style="margin-bottom:28px;line-height:1.9;color:var(--gray-700);">
+        Healthcare facilities are subject to strict staffing regulations set by provincial and national health authorities. Partnering with a reputable staffing agency ensures that your facility always meets minimum staffing ratios and compliance standards.
+      </p>
+
+      <h4 style="margin-bottom:10px;color:var(--teal);font-size:1.15rem;">
+        4. Operational Efficiency and Cost Management
+      </h4>
+      <p style="margin-bottom:28px;line-height:1.9;color:var(--gray-700);">
+        Gaps in staffing can result in costly overtime pay and emergency hiring. A proactive staffing strategy through a trusted agency reduces these unexpected costs while maintaining optimal service delivery.
+      </p>
+
+      <h4 style="margin-bottom:10px;color:var(--teal);font-size:1.15rem;">
+        5. Adaptability During Peak Demand
+      </h4>
+      <p style="margin-bottom:40px;line-height:1.9;color:var(--gray-700);">
+        Healthcare demand can surge unpredictably — during flu seasons, emergencies, or public health events. A reliable staffing partner allows facilities to scale their workforce rapidly without compromising care standards.
+      </p>
+
+      <h3 style="margin-bottom:16px;color:var(--navy);font-size:1.5rem;">
+        The PrimeCare Staffing Corp Difference
+      </h3>
+      <p style="margin-bottom:20px;line-height:1.9;color:var(--gray-700);">
+        PrimeCare Staffing Corp is built on the principle that reliable staffing is the backbone of great healthcare. We deliver:
+      </p>
+      <ul style="margin-bottom:40px;padding-left:22px;line-height:2;color:var(--gray-700);">
+        <li>24/7 staffing support for urgent and planned needs</li>
+        <li>Pre-vetted, credentialed professionals ready to deploy</li>
+        <li>Coverage across all key healthcare departments</li>
+        <li>Long-term staffing partnerships tailored to your facility's needs</li>
+        <li>Compliance assurance with provincial healthcare regulations</li>
+      </ul>
+
+      <h3 style="margin-bottom:16px;color:var(--navy);font-size:1.5rem;">
+        Conclusion
+      </h3>
+      <p style="line-height:1.9;color:var(--gray-700);margin-bottom:40px;">
+        Reliable healthcare staffing is not simply about filling shifts — it is about protecting patients, supporting your team, and sustaining the highest levels of care. PrimeCare Staffing Corp is your dedicated partner in achieving all three, every day.
+      </p>
+
+      <a onclick="showPage('home')" class="btn btn-primary">
+        Back to Home
+      </a>
+
+    </div>
+  </section>
+
+</div><!-- /page-blog3 -->
 
 <!-- ══════════════════════════════════════════════════════════════
      FOOTER (shared)
